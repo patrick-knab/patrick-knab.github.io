@@ -3,9 +3,7 @@ secondary_name: ""
 navbar_name: "Patrick Knab"
 
 positions:
-
-- name: PhD Candidate
-
+  - name: PhD Candidate
 
 email: "patrick.knab@tu-clausthal.de"
 # cv_link: link-to-your-cv-file
@@ -21,7 +19,7 @@ linkedin: patrick-knab-4396261b4
 short_bio_text_justify: false
 short_bio: >-
   <p>
-   TODO
+    TODO
   </p>
   <p>
     TODO
@@ -30,31 +28,33 @@ short_bio: >-
 portrait_url: /assets/images/photos/me.jpg
 
 education:
-- name : Clausthal University of Technology
-  logo: /assets/images/badges/tuc.png
-  position: PhD Candidate 
-  date: Feb. 2025 - present
-- name : University of Mannheim
-  logo: /assets/images/badges/mannheim.png
-  position: PhD Candidate 
-  date: Sept. 2023 - Jan. 2025
-- name: University of Mannheim
-  logo: /assets/images/badges/mannheim.png
-  position: M.Sc. in Information Science 
-  date: Feb. 2021 - Aug. 2023
-- name: University of Mannheim
-  logo: /assets/images/badges/mannheim.png
-  position: B.S. in Information Science 
-  date: Sep. 2017 - Dec. 2020
+  - name: Clausthal University of Technology
+    logo: /assets/images/badges/tuc.png
+    position: PhD Candidate 
+    date: Feb. 2025 - present
+  - name: University of Mannheim
+    logo: /assets/images/badges/mannheim.png
+    position: PhD Candidate 
+    date: Sept. 2023 - Jan. 2025
+  - name: University of Mannheim
+    logo: /assets/images/badges/mannheim.png
+    position: M.Sc. in Information Science 
+    date: Feb. 2021 - Aug. 2023
+  - name: University of Mannheim
+    logo: /assets/images/badges/mannheim.png
+    position: B.S. in Information Science 
+    date: Sep. 2017 - Dec. 2020
 
- experience:
- - name: University of Mannheim
-   logo: /assets/images/badges/mannheim.png
-   position: Research Intern
-   date: Jan. 2022 - Aug. 2023
- - name: Rest TODO
+experience:
+  - name: University of Mannheim
+    logo: /assets/images/badges/mannheim.png
+    position: Research Intern
+    date: Jan. 2022 - Aug. 2023
+  - name: Rest TODO
+    logo: /assets/images/badges/mannheim.png
+    position: Placeholder
+    date: TBD
 
 awards:
-- name: Ideenwettbewerb Regionalpreis Mainz 
-  date: 2025
-
+  - name: Ideenwettbewerb Regionalpreis Mainz 
+    date: 2025
