@@ -1,6 +1,6 @@
 ---
 title:          "DCBM: Data-Efficient Visual Concept Bottleneck Models"
-date:           2025-13-06 00:01:00 +0800
+date:           2025-06-13 00:01:00 +0800
 selected:       true
 pub:            "International Conference on Machine Learning (ICML)"
 pub_date:       "2025"

@@ -1,6 +1,6 @@
 ---
 title:          "Which LIME should I trust? Concepts, Challenges and Solutions"
-date:           2025-12-06 00:01:00 +0800
+date:           2025-06-12 00:01:00 +0800
 selected:       true
 pub:            "The World Conference on eXplainable Artificial Intelligence (XAI)"
 # pub_pre:        "Submitted to "
