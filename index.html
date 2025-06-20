@@ -28,3 +28,23 @@ navbar_title: Home
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
 {% endif %}
+
+{% assign additional_items = site.additional | sort: "date" | reverse %}
+{% if additional_items.size > 0 %}
+  <div class="mt-4">
+    <h2>Additional Experiences and Achievements</h2>
+    <div class="row">
+      {% for item in additional_items %}
+        <div class="col-md-6 col-12 mb-3">
+          <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.title }}</h5>
+              {% if item.date %}<h6 class="card-subtitle mb-2 text-muted">{{ item.date }}</h6>{% endif %}
+              <p class="card-text">{{ item.content | markdownify }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

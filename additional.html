@@ -1,0 +1,26 @@
+---
+layout: default
+title : Additional
+navbar_title: Additional
+container_class: container-xl
+---
+
+{% assign cards_by_group = site.additional | sort: "date" | reverse | group_by_exp: "item", "item.group" %}
+
+{% for group in cards_by_group %}
+<h1>{{ group.name }}</h1>
+<div class="row grid mb-4">
+    <div class="grid-sizer col-1"></div>
+    {% for item in group.items %}
+    <div class="p-2 grid-item col-md-6 col-sm-12 col-12">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.title }}</h5>
+                {% if item.date %}<h6 class="card-subtitle mb-2 text-muted">{{ item.date }}</h6>{% endif %}
+                <p class="card-text">{{ item.content | markdownify }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %} 
