@@ -31,11 +31,11 @@ education:
   - name: University of Mannheim
     logo: /assets/images/badges/mannheim.png
     position: M.Sc. in Information Science
-    date: Jan. 2021 – Aug. 2023
+    date: Jan. 2021 - Aug. 2023
     focus: Artificial Intelligence, IT Management
   - name: Lappeenranta University of Technology, Finland
     position: Semester Abroad
-    date: Jan. 2020 – Apr. 2020
+    date: Jan. 2020 - Apr. 2020
   - name: University of Mannheim
     logo: /assets/images/badges/mannheim.png
     position: B.S. in Information Science 
@@ -52,35 +52,35 @@ experience:
     date: Sept. 2023 - Jan. 2025
   - name: Robert-Bosch GmbH, Bühl
     position: Working Student
-    date: May 2023 – Aug. 2023
+    date: May 2023 - Aug. 2023
   - name: Robert-Bosch GmbH, Bühl
     position: Masterand
-    date: Oct. 2022 – Apr. 2023
+    date: Oct. 2022 - Apr. 2023
     collaboration: Robert-Bosch GmbH, Bühl
   - name: Robert-Bosch GmbH, Bühl
     position: Working Student
-    date: Jul. 2022 – Sep. 2022
+    date: Jul. 2022 - Sep. 2022
   - name: Institute for Enterprise Systems (InES), University of Mannheim
     position: Scientific Assistant
-    date: Jan. 2022 – Aug. 2023
+    date: Jan. 2022 - Aug. 2023
   - name: Grosse-Hornke, Münster
     position: Working Student
-    date: Nov. 2021 – Jul. 2022
+    date: Nov. 2021 - Jul. 2022
   - name: Robert-Bosch GmbH, Bühl
     position: Working Student
-    date: Jan. 2021 – Dec. 2021
+    date: Jan. 2021 - Dec. 2021
   - name: Robert-Bosch GmbH, Bühl 
     position: Bachelorand
-    date: Sep. 2020 – Dec. 2020
+    date: Sep. 2020 - Dec. 2020
   - name: Robert-Bosch GmbH, Bühl
     position: Intern
-    date: May 2020 – Aug. 2020
+    date: May 2020 - Aug. 2020
   - name: Porsche AG, Weissach
     position: Working Student
-    date: Oct. 2019 – Dec. 2019
+    date: Oct. 2019 - Dec. 2019
   - name: Robert-Bosch GmbH, Bühl
     position: Intern
-    date: Jul. 2019 – Aug. 2019
+    date: Jul. 2019 - Aug. 2019
 
 awards:
   - name: Ideenwettbewerb Regionalpreis Mainz 
