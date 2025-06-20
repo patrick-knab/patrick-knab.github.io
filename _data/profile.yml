@@ -41,38 +41,47 @@ education:
 
 experience:
   - name: Clausthal University of Technology
-    #logo: /assets/images/badges/tuc.png
+    logo: /assets/images/badges/tuc.png
     position: PhD Candidate
     date: Feb. 2025 - present
   - name: University of Mannheim
-    #logo: /assets/images/badges/mannheim.png
+    logo: /assets/images/badges/mannheim.png
     position: PhD Candidate
     date: Sept. 2023 - Jan. 2025
   - name: Robert-Bosch GmbH, Bühl
+    logo: /assets/images/badges/bosch.png
     position: Masterand
     date: Oct. 2022 - Apr. 2023
   - name: Robert-Bosch GmbH, Bühl
+    logo: /assets/images/badges/bosch.png
     position: Working Student
     date: Jul. 2022 - Aug. 2023
   - name: Institute for Enterprise Systems, Mannheim
+    logo: /assets/images/badges/ines.png
     position: Scientific Assistant
     date: Jan. 2022 - Aug. 2023
   - name: Grosse-Hornke, Münster
+    logo: /assets/images/badges/grosse-hornke.png
     position: Working Student
     date: Nov. 2021 - Jul. 2022
   - name: Robert-Bosch GmbH, Bühl
+    logo: /assets/images/badges/bosch.png
     position: Working Student
     date: Jan. 2021 - Dec. 2021
   - name: Robert-Bosch GmbH, Bühl 
+    logo: /assets/images/badges/bosch.png
     position: Bachelorand
     date: Sep. 2020 - Dec. 2020
   - name: Robert-Bosch GmbH, Bühl
+    logo: /assets/images/badges/bosch.png
     position: Intern
     date: May 2020 - Aug. 2020
   - name: Porsche AG, Weissach
+    logo: /assets/images/badges/porsche.png
     position: Working Student
     date: Oct. 2019 - Dec. 2019
   - name: Robert-Bosch GmbH, Bühl
+    logo: /assets/images/badges/bosch.png
     position: Intern
     date: Jul. 2019 - Aug. 2019
 
