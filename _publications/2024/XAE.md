@@ -2,7 +2,7 @@
 title:          "Interpreting Outliers in Time Series Data through Decoding Autoencoder"
 date:           2024-09-07 00:01:00 +0800
 selected:       false
-pub:            "The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) @ TempXAI Workshop"
+pub:            "The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD) @ TempInterpretable AI Workshop"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 pub_date:       "2024"

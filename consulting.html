@@ -1,0 +1,191 @@
+---
+layout: default
+title: Consulting
+navbar_title: Consulting
+---
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+
+            <!-- Language Toggle -->
+            <div class="d-flex justify-content-end mb-3">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Language">
+                    <button type="button" class="btn btn-outline-secondary active" id="btn-de"
+                        onclick="switchLang('de')">DE</button>
+                    <button type="button" class="btn btn-outline-secondary" id="btn-en"
+                        onclick="switchLang('en')">EN</button>
+                </div>
+            </div>
+
+            <!-- ==================== GERMAN ==================== -->
+            <div id="lang-de">
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 font-weight-bold">KI-Beratung</h1>
+                    <p class="lead text-muted">Forschungsnah. Praxisorientiert. Unabhängig.</p>
+                    <div class="d-flex justify-content-center mt-3">
+                        <span class="badge badge-light p-2 mx-2 border"><i
+                                class="fas fa-map-marker-alt text-primary mr-1"></i> Mannheim</span>
+                        <span class="badge badge-light p-2 mx-2 border"><i
+                                class="fas fa-map-marker-alt text-primary mr-1"></i> Offenburg</span>
+                        <span class="badge badge-light p-2 mx-2 border"><i
+                                class="fas fa-laptop-house text-primary mr-1"></i> Remote</span>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Main Content -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Worum es geht</h2>
+                            <p>Ich promoviere im Bereich <strong>Computer Vision</strong> und <strong>Interpretable AI</strong> und beschäftige mich täglich mit aktuellen Methoden der Künstlichen Intelligenz &ndash; von Foundation Models über Explainability bis hin zu visuellen Konzeptrepräsentationen. Neben meiner Forschung unterstütze ich Unternehmen dabei, diese Methoden sinnvoll und praxisnah einzusetzen.</p>
+                            <p>Mir ist wichtig, ehrlich einzuschätzen, wo KI tatsächlich einen Mehrwert bringt &ndash; und wo nicht. Kein Buzzword-Bingo, sondern eine fundierte Einordnung auf Basis aktueller Forschung.</p>
+
+                            <div class="mt-4">
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-search-plus text-primary mr-2"></i>Einschätzung & Potenzialanalyse</h4>
+                                    <p class="text-muted">Gemeinsam schauen wir uns Ihre Prozesse an und identifizieren, wo KI realistisch helfen kann. Ich ordne ein, was mit dem aktuellen Stand der Technik machbar ist &ndash; und was (noch) nicht.</p>
+                                </div>
+
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-code-branch text-primary mr-2"></i>Prototypen & Proof of Concepts</h4>
+                                    <p class="text-muted">Sie haben eine konkrete Idee? Ich setze einen funktionierenden Prototyp um, damit Sie schnell sehen, ob und wie eine KI-Lösung in Ihrem Kontext funktioniert.</p>
+                                </div>
+
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-users-cog text-primary mr-2"></i>Workshops & Schulungen</h4>
+                                    <p class="text-muted">Praxisnahe Workshops für Teams, die KI-Tools im Arbeitsalltag nutzen wollen &ndash; von LLMs und Agenten bis hin zu Computer Vision. Kein Frontalunterricht, sondern Hands-on.</p>
+                                </div>
+
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-tasks text-primary mr-2"></i>Technische Projektbegleitung</h4>
+                                    <p class="text-muted">Bei laufenden oder geplanten KI-Projekten stehe ich als fachlicher Sparringspartner zur Seite &ndash; sei es bei der Architektur, der Modellwahl oder der Kommunikation zwischen Technik und Fachabteilung.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Sidebar / Contact -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm bg-white p-4 sticky-top" style="top: 100px;">
+                            <h3 class="h5 font-weight-bold mb-3">Kontakt</h3>
+                            <p class="small text-muted mb-4">Schreiben Sie mir gerne &ndash; wir finden in einem kurzen Gespräch heraus, ob und wie ich unterstützen kann.</p>
+                            <a href="mailto:{{ site.data.profile.email }}"
+                                class="btn btn-primary btn-block mb-3 py-2 font-weight-bold">Anfrage senden</a>
+                            <p class="small text-center text-muted"><i class="fas fa-globe-europe mr-1"></i> Mannheim,
+                                Offenburg & Remote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== ENGLISH ==================== -->
+            <div id="lang-en" style="display: none;">
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4 font-weight-bold">AI Consulting</h1>
+                    <p class="lead text-muted">Research-driven. Hands-on. Honest.</p>
+                    <div class="d-flex justify-content-center mt-3">
+                        <span class="badge badge-light p-2 mx-2 border"><i
+                                class="fas fa-map-marker-alt text-primary mr-1"></i> Mannheim</span>
+                        <span class="badge badge-light p-2 mx-2 border"><i
+                                class="fas fa-map-marker-alt text-primary mr-1"></i> Offenburg</span>
+                        <span class="badge badge-light p-2 mx-2 border"><i
+                                class="fas fa-laptop-house text-primary mr-1"></i> Remote</span>
+                    </div>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- Main Content -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">What I do</h2>
+                            <p>I'm a PhD researcher working on <strong>Computer Vision</strong> and <strong>Interpretable AI</strong>, dealing with state-of-the-art AI methods on a daily basis &ndash; from foundation models and explainability to visual concept representations. Alongside my research, I help companies apply these methods in a way that actually makes sense for their use case.</p>
+                            <p>I believe in giving an honest assessment of where AI adds real value &ndash; and where it doesn't. No hype, just a grounded perspective informed by current research.</p>
+
+                            <div class="mt-4">
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-search-plus text-primary mr-2"></i>Assessment & Feasibility</h4>
+                                    <p class="text-muted">We take a close look at your processes together and figure out where AI can realistically help. I provide context on what's feasible with current methods &ndash; and what isn't (yet).</p>
+                                </div>
+
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-code-branch text-primary mr-2"></i>Prototypes & Proof of Concepts</h4>
+                                    <p class="text-muted">Have a concrete idea? I build a working prototype so you can quickly evaluate whether and how an AI solution works in your specific context.</p>
+                                </div>
+
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-users-cog text-primary mr-2"></i>Workshops & Training</h4>
+                                    <p class="text-muted">Hands-on workshops for teams that want to use AI tools in their daily work &ndash; from LLMs and agents to computer vision. Interactive, not lecture-style.</p>
+                                </div>
+
+                                <div class="service-item mb-4">
+                                    <h4 class="h5 font-weight-bold"><i
+                                            class="fas fa-tasks text-primary mr-2"></i>Technical Project Support</h4>
+                                    <p class="text-muted">For ongoing or planned AI projects, I serve as a technical sparring partner &ndash; whether it's about architecture, model selection, or bridging the gap between engineering and business teams.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Sidebar / Contact -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm bg-white p-4 sticky-top" style="top: 100px;">
+                            <h3 class="h5 font-weight-bold mb-3">Get in touch</h3>
+                            <p class="small text-muted mb-4">Drop me a message &ndash; happy to have a quick chat to see if and how I can help.</p>
+                            <a href="mailto:{{ site.data.profile.email }}"
+                                class="btn btn-primary btn-block mb-3 py-2 font-weight-bold">Send inquiry</a>
+                            <p class="small text-center text-muted"><i class="fas fa-globe-europe mr-1"></i> Mannheim,
+                                Offenburg & Remote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .section-title {
+        border-left: 4px solid var(--primary);
+        padding-left: 15px;
+    }
+
+    .service-item {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+    }
+
+    .service-item:last-child {
+        border-bottom: none;
+    }
+
+    .btn-group .btn.active {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: #fff;
+    }
+</style>
+
+<script>
+    function switchLang(lang) {
+        document.getElementById('lang-de').style.display = lang === 'de' ? 'block' : 'none';
+        document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+
+        document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+</script>

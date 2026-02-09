@@ -18,9 +18,7 @@ linkedin: patrick-knab-4396261b4
 
 short_bio_text_justify: false
 short_bio: >-
-  <p>
-    I am a third-year PhD candidate at Clausthal University of Technology working on Computer Vision and Explainable AI. My research investigates how foundation models can be used to derive domain-specific visual concepts that make neural networks more transparent and easier to interpret. I am particularly interested in how such concept representations can improve the performance of vision foundation models in image and video generation, understanding, and downstream decision-making.
-  </p>
+    I am a third-year PhD candidate at Clausthal University of Technology working on Computer Vision and Interpretable AI. My research investigates how foundation models can be used to derive domain-specific visual concepts that make neural networks more transparent and easier to interpret. I am particularly interested in how such concept representations can improve the performance of vision foundation models in image and video generation, understanding, and downstream decision-making.
 
 
 portrait_url: /assets/images/photos/me.jpg
