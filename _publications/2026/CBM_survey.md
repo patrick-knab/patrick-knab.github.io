@@ -17,8 +17,8 @@ authors:
   - Kristian Kersting
   - Bernt Schiele
   - Thomas Seidl
-  - Udo Schlegel
-  - Wolfgang Stammer
+  - Udo Schlegel†
+  - Wolfgang Stammer†
 links:
   Paper: https://www.researchgate.net/publication/401288530_What's_in_the_Bottle_A_Survey_and_Roadmap_of_Concept_Bottleneck_Models
 ---
