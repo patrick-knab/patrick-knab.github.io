@@ -1,6 +1,6 @@
 ---
 title:          "Concepts in Motion: Temporal Bottlenecks for Interpretable Video Classification"
-date:           2025-13-04 00:03:00 +0800
+date:           2025-04-13 00:03:00 +0800
 selected:       true
 pub:            "Conference on Computer Vision and Pattern Recognition (CVPR) @ XAI5CV Workshop"
 pub_date:       "2025"
