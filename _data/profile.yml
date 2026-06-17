@@ -4,6 +4,7 @@ navbar_name: "Patrick Knab"
 
 positions:
   - name: PhD Candidate
+position_note: "On-site at ICML 2026 in July, Seoul"
 
 email: "patrick.knab@tu-clausthal.de"
 # cv_link: link-to-your-cv-file
@@ -92,4 +93,3 @@ experience:
 awards:
   - name: Ideenwettbewerb Regionalpreis Mainz 
     date: 2025
-
