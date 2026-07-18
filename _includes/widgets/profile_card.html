@@ -49,6 +49,11 @@
                         {% if site.data.profile.cv_link %}
                             <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
                         {% endif %}
+                        <div class="mt-3">
+                            <a class="btn btn-outline-primary btn-sm" href="{{ '/consulting/' | relative_url }}">
+                                <i class="fas fa-comments"></i> AI Consulting
+                            </a>
+                        </div>
                     </div>
         
                 </div>
@@ -83,8 +88,8 @@
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                            <i class="fab fa-twitter"></i> Twitter
+                        <a class="pr-3 no-break" target="_blank" href="https://x.com/{{ site.data.profile.twitter }}">
+                            <i class="fab fa-x-twitter"></i> X
                         </a>
                         {% endif %}
 

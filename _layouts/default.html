@@ -4,7 +4,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% assign page_title = page.og_title | default: page.title %}
+    {% assign fallback_description = site.data.profile.short_bio | strip_html | strip_newlines | truncate: 160 %}
+    {% assign page_description = page.og_description | default: page.description | default: fallback_description %}
+    {% assign canonical_url = page.url | absolute_url %}
+    {% assign og_image = page.og_image | default: site.data.profile.portrait_url | absolute_url %}
     <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="description" content="{{ page_description | escape }}">
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords | escape }}">
+    {% endif %}
+    <meta property="og:title" content="{{ page_title | escape }} - {{ site.data.profile.navbar_name | escape }}">
+    <meta property="og:description" content="{{ page_description | escape }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:type" content="{{ page.og_type | default: 'website' }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page_title | escape }} - {{ site.data.profile.navbar_name | escape }}">
+    <meta name="twitter:description" content="{{ page_description | escape }}">
+    <meta name="twitter:image" content="{{ og_image }}">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": {{ site.url | append: site.baseurl | append: "/#person" | jsonify }},
+      "name": {{ site.data.profile.primary_name | jsonify }},
+      "url": {{ site.url | append: site.baseurl | append: "/" | jsonify }},
+      "image": {{ site.data.profile.portrait_url | absolute_url | jsonify }},
+      "email": {{ site.data.profile.email | jsonify }},
+      "jobTitle": {{ site.data.profile.positions.first.name | jsonify }},
+      "knowsAbout": ["Computer Vision", "Interpretable AI", "Explainable AI", "AI feasibility assessment"],
+      "sameAs": [
+        "https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}",
+        "https://github.com/{{ site.data.profile.github }}",
+        "https://www.linkedin.com/in/{{ site.data.profile.linkedin }}"
+      ]
+    }
+    </script>
+    {% if page.service_schema %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": {{ canonical_url | append: "#service" | jsonify }},
+      "name": {{ page.service_name | default: page.title | jsonify }},
+      "description": {{ page_description | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "provider": {
+        "@id": "{{ site.url }}{{ site.baseurl }}/#person"
+      },
+      "serviceType": "AI feasibility consulting",
+      "areaServed": [
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "Austria" },
+        { "@type": "Country", "name": "Switzerland" },
+        { "@type": "AdministrativeArea", "name": "Mannheim-Freiburg region" }
+      ]
+    }
+    </script>
+    {% endif %}
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />

@@ -10,6 +10,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+:root {
+    --primary: #365f63;
+    --primary-dark: #24494d;
+    --primary-soft: #eef4f3;
+    --border-soft: #dce5e4;
+    --text-muted-soft: #5f6f73;
+}
+
 body.bg-light {
     background-color: #f4f7fb !important;
 }
@@ -54,6 +62,58 @@ h6 {
 .nav-link {
     font-weight: 500;
     transition: color 0.2s ease;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.nav-pills .nav-link:not(.active) {
+    color: var(--primary);
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover,
+a:focus {
+    color: var(--primary-dark);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+}
+
+.badge-light {
+    background-color: #ffffff;
+    border-color: var(--border-soft) !important;
+    color: var(--text-muted-soft);
 }
 
 .inline-badge {
@@ -101,7 +161,7 @@ div.lazy {
 
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
+    border: 1px solid var(--border-soft);
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -111,11 +171,7 @@ div.lazy {
 }
 
 .card:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
-}
-
-:root {
-    --primary: #007bff;
+    box-shadow: 0 0.45rem 1.25rem rgba(36, 73, 77, 0.07) !important;
 }
 
 .email-text {
@@ -144,7 +200,7 @@ div.lazy {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    background: #eef3f8;
+    background: var(--primary-soft);
 }
 
 svg.publication-mobile-cover {
@@ -157,9 +213,9 @@ svg.publication-mobile-cover {
 
 .publication-mobile-abstract {
     margin: 0.75rem 0 0;
-    border: 1px solid #d8e2ec;
+    border: 1px solid var(--border-soft);
     border-radius: 8px;
-    background: #f7fafc;
+    background: #fbfcfc;
 }
 
 .publication-mobile-abstract summary {
@@ -188,7 +244,7 @@ svg.publication-mobile-cover {
     height: 1.25rem;
     margin-left: 0.75rem;
     border-radius: 999px;
-    background: #e8f1fb;
+    background: var(--primary-soft);
     color: var(--primary);
     font-weight: 700;
 }
@@ -215,7 +271,7 @@ svg.publication-mobile-cover {
     grid-template-columns: 4.25rem minmax(0, 1fr);
     gap: 0.75rem;
     padding: 0.65rem 0;
-    border-bottom: 1px solid #edf2f7;
+    border-bottom: 1px solid var(--border-soft);
 }
 
 .news-item:last-child {
@@ -248,7 +304,7 @@ svg.publication-mobile-cover {
 
 .news-more {
     margin-top: 0.15rem;
-    border-top: 1px solid #edf2f7;
+    border-top: 1px solid var(--border-soft);
 }
 
 .news-more summary {
@@ -275,7 +331,7 @@ svg.publication-mobile-cover {
     width: 1.25rem;
     height: 1.25rem;
     border-radius: 999px;
-    background: #e8f1fb;
+    background: var(--primary-soft);
     color: var(--primary);
     font-weight: 700;
 }
@@ -365,9 +421,9 @@ svg.publication-mobile-cover {
     .profile-mobile-bio {
         display: block;
         margin-top: 0.85rem;
-        border: 1px solid #d8e2ec;
+        border: 1px solid var(--border-soft);
         border-radius: 8px;
-        background: #f7fafc;
+        background: #fbfcfc;
     }
 
     .profile-mobile-bio summary {
@@ -394,7 +450,7 @@ svg.publication-mobile-cover {
         width: 1.25rem;
         height: 1.25rem;
         border-radius: 999px;
-        background: #e8f1fb;
+        background: var(--primary-soft);
         color: var(--primary);
         font-weight: 700;
     }
@@ -427,9 +483,9 @@ svg.publication-mobile-cover {
         max-width: 100%;
         min-height: 2.1rem;
         padding: 0.35rem 0.55rem;
-        border: 1px solid #d8e2ec;
+        border: 1px solid var(--border-soft);
         border-radius: 8px;
-        background: #f7fafc;
+        background: #fbfcfc;
         white-space: normal;
         line-height: 1.3;
     }
@@ -466,7 +522,7 @@ svg.publication-mobile-cover {
 
     .publication-mobile {
         margin: 0.75rem;
-        border: 1px solid #d8e2ec !important;
+        border: 1px solid var(--border-soft) !important;
         border-radius: 8px !important;
         box-shadow: 0 0.35rem 1rem rgba(31, 41, 51, 0.06);
     }

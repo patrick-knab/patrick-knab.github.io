@@ -1,14 +1,18 @@
 ---
 layout: default
-title: Consulting
+title: AI Consulting
 navbar_title: Consulting
+permalink: /consulting/
+description: "Honest, research-backed AI feasibility consulting for DACH SMEs: realistic assessment, use-case review, prototypes, workshops, Computer Vision, Explainable AI, and practical AI adoption."
+keywords: "KI Beratung Mittelstand, AI feasibility assessment, Computer Vision Beratung, Explainable AI, KI Potenzialanalyse, AI Consulting DACH"
+service_schema: true
+service_name: "AI Feasibility Consulting"
 ---
 
-<div class="container mt-5 mb-5">
+<div class="container consulting-page mt-5 mb-5">
     <div class="row">
         <div class="col-lg-10 offset-lg-1">
 
-            <!-- Language Toggle -->
             <div class="d-flex justify-content-end mb-3">
                 <div class="btn-group btn-group-sm" role="group" aria-label="Language">
                     <button type="button" class="btn btn-outline-secondary active" id="btn-de"
@@ -18,139 +22,263 @@ navbar_title: Consulting
                 </div>
             </div>
 
-            <!-- ==================== GERMAN ==================== -->
             <div id="lang-de">
-                <!-- Header -->
-                <div class="text-center mb-5">
-                    <h1 class="display-4 font-weight-bold">KI-Beratung</h1>
-                    <p class="lead text-muted">Forschungsnah. Praxisorientiert. Unabhängig.</p>
-                    <div class="d-flex justify-content-center mt-3">
-                        <span class="badge badge-light p-2 mx-2 border"><i
-                                class="fas fa-map-marker-alt text-primary mr-1"></i> Mannheim</span>
-                        <span class="badge badge-light p-2 mx-2 border"><i
-                                class="fas fa-map-marker-alt text-primary mr-1"></i> Offenburg</span>
-                        <span class="badge badge-light p-2 mx-2 border"><i
-                                class="fas fa-laptop-house text-primary mr-1"></i> Remote</span>
+                <header class="consulting-hero text-center mb-5">
+                    <p class="eyebrow mb-2">KI-Beratung für Mittelstand und technische Teams</p>
+                    <h1 class="display-4 font-weight-bold">Realistische KI-Einschätzung, bevor Sie investieren.</h1>
+                    <p class="lead text-muted mx-auto">Ich helfe Ihnen einzuschätzen, ob KI in Ihrem konkreten Prozess sinnvoll ist, was technisch machbar ist und welcher nächste Schritt sich lohnt.</p>
+                    <div class="d-flex justify-content-center flex-wrap mt-3">
+                        <span class="badge badge-light p-2 mx-2 my-1 border"><i class="fas fa-map-marker-alt text-primary mr-1"></i> Region Mannheim-Freiburg</span>
+                        <span class="badge badge-light p-2 mx-2 my-1 border"><i class="fas fa-laptop-house text-primary mr-1"></i> Remote im DACH-Raum</span>
                     </div>
-                </div>
+                    <div class="mt-4">
+                        <a href="mailto:{{ site.data.profile.email }}?subject=AI%20Feasibility%20Call"
+                            class="btn btn-primary btn-lg px-4 font-weight-bold">Kostenloses Erstgespräch anfragen</a>
+                        <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-lg px-4 ml-sm-2 mt-2 mt-sm-0">Ausgewählte Arbeiten ansehen</a>
+                    </div>
+                </header>
 
-                <hr class="my-5">
-
-                <!-- Main Content -->
                 <div class="row">
-                    <div class="col-md-8">
+                    <main class="col-md-8">
                         <section class="mb-5">
-                            <h2 class="h3 mb-4 section-title">Worum es geht</h2>
-                            <p>Ich promoviere im Bereich <strong>Computer Vision</strong> und <strong>Interpretable AI</strong> und beschäftige mich täglich mit aktuellen Methoden der Künstlichen Intelligenz &ndash; von Foundation Models über Explainability bis hin zu visuellen Konzeptrepräsentationen. Neben meiner Forschung unterstütze ich Unternehmen dabei, diese Methoden sinnvoll und praxisnah einzusetzen.</p>
-                            <p>Mir ist wichtig, ehrlich einzuschätzen, wo KI tatsächlich einen Mehrwert bringt &ndash; und wo nicht. Kein Buzzword-Bingo, sondern eine fundierte Einordnung auf Basis aktueller Forschung.</p>
+                            <h2 class="h3 mb-4 section-title">Warum ich das anbiete</h2>
+                            <p>KI ist gerade stark im Aufwind. Gleichzeitig entsteht dadurch ein Beratungsmarkt, in dem viele Lösungen sehr selbstbewusst verkauft werden, obwohl die technische Grundlage dahinter nicht immer belastbar ist.</p>
+                            <p>Aus meiner wissenschaftlichen Arbeit sehe ich immer wieder, wie dynamisch und anspruchsvoll das Feld tatsächlich ist: Modelle verändern sich schnell, Evaluation ist schwierig, Datenqualität entscheidet oft mehr als das Tool selbst, und nicht jeder Prozess braucht eine komplexe KI-Lösung.</p>
+                            <p>Gerade Mittelständler sollten deshalb keine überdimensionierten Tools kaufen müssen, nur weil KI gerade attraktiv klingt. Ich möchte meine Erfahrung aus angewandter Forschung einbringen, um ehrlich einzuordnen, wann KI sinnvoll ist, wann ein kleiner Prototyp reicht und wann man besser noch wartet.</p>
+                        </section>
 
-                            <div class="mt-4">
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-search-plus text-primary mr-2"></i>Einschätzung & Potenzialanalyse</h4>
-                                    <p class="text-muted">Gemeinsam schauen wir uns Ihre Prozesse an und identifizieren, wo KI realistisch helfen kann. Ich ordne ein, was mit dem aktuellen Stand der Technik machbar ist &ndash; und was (noch) nicht.</p>
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Für wen das passt</h2>
+                            <p>Diese Seite richtet sich an Unternehmen im DACH-Raum, die KI nicht als Selbstzweck einführen wollen, sondern eine belastbare Einschätzung brauchen: bei Prozessen, Daten, visueller Inspektion, Automatisierung, internen KI-Tools oder ersten Produktideen.</p>
+                            <p>Der erste Schritt ist bewusst klein: Wir klären gemeinsam, ob ein Use Case tragfähig ist, wo Risiken liegen und ob ein Workshop, ein Prototyp oder auch bewusst kein KI-Projekt der sinnvollste nächste Schritt ist.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Angebote</h2>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-magnifying-glass-chart text-primary mr-2"></i>AI Feasibility Call</h3>
+                                <p class="text-muted">Ein kurzer, niedrigschwelliger Einstieg: Wir sprechen über Ihren Prozess, Ihre Datenlage und Ihr Ziel. Danach haben Sie eine ehrliche erste Einschätzung, ob KI hier realistisch Mehrwert bringen kann.</p>
+                            </div>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-route text-primary mr-2"></i>Use-Case & Prozess-Review</h3>
+                                <p class="text-muted">Wir priorisieren konkrete KI-Möglichkeiten, schätzen Aufwand und Risiken ein und trennen plausible Anwendungen von Ideen, die aktuell zu teuer, unreif oder organisatorisch unpassend wären.</p>
+                            </div>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-code-branch text-primary mr-2"></i>Prototypen & Proof of Concepts</h3>
+                                <p class="text-muted">Wenn eine Idee konkret genug ist, setze ich einen fokussierten Prototyp um. Ziel ist kein großes Versprechen, sondern ein früher Realitätscheck mit Ihrem Material, Ihren Anforderungen und sichtbaren Grenzen.</p>
+                            </div>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-users-cog text-primary mr-2"></i>Workshops & Schulungen</h3>
+                                <p class="text-muted">Hands-on Formate für Teams, die KI-Tools im Arbeitsalltag verstehen und sinnvoll nutzen wollen: von LLMs und Agenten bis zu Computer Vision und Explainable AI.</p>
+                            </div>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Was Sie aus dem ersten Schritt mitnehmen</h2>
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Chancen & Grenzen</h3>
+                                        <p class="small text-muted mb-0">Eine klare Einordnung, was mit heutigen Methoden plausibel ist und was nicht.</p>
+                                    </div>
                                 </div>
-
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-code-branch text-primary mr-2"></i>Prototypen & Proof of Concepts</h4>
-                                    <p class="text-muted">Sie haben eine konkrete Idee? Ich setze einen funktionierenden Prototyp um, damit Sie schnell sehen, ob und wie eine KI-Lösung in Ihrem Kontext funktioniert.</p>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Risiken & Datenlage</h3>
+                                        <p class="small text-muted mb-0">Eine frühe Sicht auf Datenqualität, technische Unsicherheiten und organisatorische Hürden.</p>
+                                    </div>
                                 </div>
-
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-users-cog text-primary mr-2"></i>Workshops & Schulungen</h4>
-                                    <p class="text-muted">Praxisnahe Workshops für Teams, die KI-Tools im Arbeitsalltag nutzen wollen &ndash; von LLMs und Agenten bis hin zu Computer Vision. Kein Frontalunterricht, sondern Hands-on.</p>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Aufwand & nächster Schritt</h3>
+                                        <p class="small text-muted mb-0">Eine grobe Einschätzung, ob sich Review, Workshop oder Prototyp lohnt.</p>
+                                    </div>
                                 </div>
-
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-tasks text-primary mr-2"></i>Technische Projektbegleitung</h4>
-                                    <p class="text-muted">Bei laufenden oder geplanten KI-Projekten stehe ich als fachlicher Sparringspartner zur Seite &ndash; sei es bei der Architektur, der Modellwahl oder der Kommunikation zwischen Technik und Fachabteilung.</p>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Stop/Go-Empfehlung</h3>
+                                        <p class="small text-muted mb-0">Eine ehrliche Empfehlung, auch wenn die beste Antwort lautet: noch nicht investieren.</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
-                    </div>
 
-                    <!-- Sidebar / Contact -->
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow-sm bg-white p-4 sticky-top" style="top: 100px;">
-                            <h3 class="h5 font-weight-bold mb-3">Kontakt</h3>
-                            <p class="small text-muted mb-4">Schreiben Sie mir gerne &ndash; wir finden in einem kurzen Gespräch heraus, ob und wie ich unterstützen kann.</p>
-                            <a href="mailto:{{ site.data.profile.email }}"
-                                class="btn btn-primary btn-block mb-3 py-2 font-weight-bold">Anfrage senden</a>
-                            <p class="small text-center text-muted"><i class="fas fa-globe-europe mr-1"></i> Mannheim,
-                                Offenburg & Remote</p>
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Wie ich arbeite</h2>
+                            <ul class="principles-list text-muted">
+                                <li>Kein Hype und keine garantierten ROI-Versprechen.</li>
+                                <li>Keine KI, wenn eine einfachere Lösung besser passt.</li>
+                                <li>Prototyp vor großer Investition.</li>
+                                <li>Vendor-neutral und ohne unnötigen Lock-in.</li>
+                                <li>Transparente Annahmen, Grenzen und offene Fragen.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Weitere Beratungsthemen</h2>
+                            <p class="text-muted">Für spezifischere Fragen habe ich zwei kurze Vertiefungen zusammengestellt:</p>
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <a class="topic-link d-block h-100" href="{{ '/ki-beratung-mittelstand/' | relative_url }}">
+                                        <strong>KI-Beratung für Mittelstand</strong>
+                                        <span>Realistische Einordnung für Unternehmen in der DACH-Region.</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <a class="topic-link d-block h-100" href="{{ '/ai-feasibility-assessment/' | relative_url }}">
+                                        <strong>AI Feasibility Assessment</strong>
+                                        <span>Strukturierter Stop/Go-Check für KI-Ideen und Prototypen.</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+
+                    <aside class="col-md-4">
+                        <div class="card border-0 shadow-sm bg-white p-4 sticky-top consulting-contact" style="top: 100px;">
+                            <h2 class="h5 font-weight-bold mb-3">Erstgespräch</h2>
+                            <p class="small text-muted mb-4">Schreiben Sie mir kurz, welche Frage oder Idee Sie prüfen möchten. Wir klären dann, ob und wie ich sinnvoll unterstützen kann.</p>
+                            <a href="mailto:{{ site.data.profile.email }}?subject=AI%20Feasibility%20Call"
+                                class="btn btn-primary btn-block mb-3 py-2 font-weight-bold">Kostenloses Erstgespräch anfragen</a>
+                            <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-block mb-4 py-2">Research-Profil ansehen</a>
+                            <div class="small text-muted">
+                                <p class="mb-2"><i class="fas fa-user-graduate text-primary mr-2"></i>Wissenschaftliche Expertise in Computer Vision & Interpretable AI</p>
+                                <p class="mb-0"><i class="fas fa-building text-primary mr-2"></i>Praxiserfahrung im KI-Anwendungsbereich bei namhaften Unternehmen, u.a. Bosch, Porsche und Ramblr</p>
+                            </div>
+                            <hr>
+                            <p class="small text-muted mb-0"><i class="fas fa-location-dot text-primary mr-2"></i>Remote im gesamten DACH-Raum, vor Ort vor allem in der Region Mannheim-Freiburg, z.B. Heidelberg, Karlsruhe und Offenburg.</p>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
 
-            <!-- ==================== ENGLISH ==================== -->
             <div id="lang-en" style="display: none;">
-                <!-- Header -->
-                <div class="text-center mb-5">
-                    <h1 class="display-4 font-weight-bold">AI Consulting</h1>
-                    <p class="lead text-muted">Research-driven. Hands-on. Honest.</p>
-                    <div class="d-flex justify-content-center mt-3">
-                        <span class="badge badge-light p-2 mx-2 border"><i
-                                class="fas fa-map-marker-alt text-primary mr-1"></i> Mannheim</span>
-                        <span class="badge badge-light p-2 mx-2 border"><i
-                                class="fas fa-map-marker-alt text-primary mr-1"></i> Offenburg</span>
-                        <span class="badge badge-light p-2 mx-2 border"><i
-                                class="fas fa-laptop-house text-primary mr-1"></i> Remote</span>
+                <header class="consulting-hero text-center mb-5">
+                    <p class="eyebrow mb-2">AI consulting for DACH SMEs and technical teams</p>
+                    <h1 class="display-4 font-weight-bold">A realistic AI assessment before you invest.</h1>
+                    <p class="lead text-muted mx-auto">I help you understand whether AI makes sense for your specific process, what is technically feasible, and which next step is worth taking.</p>
+                    <div class="d-flex justify-content-center flex-wrap mt-3">
+                        <span class="badge badge-light p-2 mx-2 my-1 border"><i class="fas fa-map-marker-alt text-primary mr-1"></i> Mannheim-Freiburg region</span>
+                        <span class="badge badge-light p-2 mx-2 my-1 border"><i class="fas fa-laptop-house text-primary mr-1"></i> Remote across DACH</span>
                     </div>
-                </div>
+                    <div class="mt-4">
+                        <a href="mailto:{{ site.data.profile.email }}?subject=AI%20Feasibility%20Call"
+                            class="btn btn-primary btn-lg px-4 font-weight-bold">Request feasibility call</a>
+                        <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-lg px-4 ml-sm-2 mt-2 mt-sm-0">See selected work</a>
+                    </div>
+                </header>
 
-                <hr class="my-5">
-
-                <!-- Main Content -->
                 <div class="row">
-                    <div class="col-md-8">
+                    <main class="col-md-8">
                         <section class="mb-5">
-                            <h2 class="h3 mb-4 section-title">What I do</h2>
-                            <p>I'm a PhD researcher working on <strong>Computer Vision</strong> and <strong>Interpretable AI</strong>, dealing with state-of-the-art AI methods on a daily basis &ndash; from foundation models and explainability to visual concept representations. Alongside my research, I help companies apply these methods in a way that actually makes sense for their use case.</p>
-                            <p>I believe in giving an honest assessment of where AI adds real value &ndash; and where it doesn't. No hype, just a grounded perspective informed by current research.</p>
+                            <h2 class="h3 mb-4 section-title">Why I offer this</h2>
+                            <p>AI is booming, and that has created a consulting market where many solutions are sold with a lot of confidence, even when the technical foundation behind them is not always solid.</p>
+                            <p>From my scientific work, I repeatedly see how dynamic and demanding the field really is: models change quickly, evaluation is difficult, data quality often matters more than the tool itself, and not every process needs a complex AI solution.</p>
+                            <p>Especially SMEs should not have to buy oversized tools just because AI sounds attractive right now. I want to bring in my experience from applied research to honestly assess when AI makes sense, when a small prototype is enough, and when it is better to wait.</p>
+                        </section>
 
-                            <div class="mt-4">
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-search-plus text-primary mr-2"></i>Assessment & Feasibility</h4>
-                                    <p class="text-muted">We take a close look at your processes together and figure out where AI can realistically help. I provide context on what's feasible with current methods &ndash; and what isn't (yet).</p>
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Who this is for</h2>
+                            <p>This is for companies in the DACH region that do not want AI for its own sake, but need a grounded assessment: around processes, data, visual inspection, automation, internal AI tools, or early product ideas.</p>
+                            <p>The first step is intentionally small: we clarify whether a use case is viable, where the risks are, and whether a workshop, prototype, or no AI project at all is the most sensible next move.</p>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Offers</h2>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-magnifying-glass-chart text-primary mr-2"></i>AI Feasibility Call</h3>
+                                <p class="text-muted">A low-commitment first step: we discuss your process, data situation, and goal. Afterwards, you have an honest first view of whether AI can realistically add value.</p>
+                            </div>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-route text-primary mr-2"></i>Use-case & Process Review</h3>
+                                <p class="text-muted">We prioritize concrete AI opportunities, estimate effort and risk, and separate plausible applications from ideas that are currently too expensive, immature, or organizationally misaligned.</p>
+                            </div>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-code-branch text-primary mr-2"></i>Prototypes & Proofs of Concept</h3>
+                                <p class="text-muted">When an idea is concrete enough, I build a focused prototype. The goal is not a big promise, but an early reality check with your material, your requirements, and visible limitations.</p>
+                            </div>
+                            <div class="service-item mb-4">
+                                <h3 class="h5 font-weight-bold"><i class="fas fa-users-cog text-primary mr-2"></i>Workshops & Training</h3>
+                                <p class="text-muted">Hands-on formats for teams that want to understand and use AI tools in daily work: from LLMs and agents to computer vision and explainable AI.</p>
+                            </div>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">What you get from the first step</h2>
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Opportunities & limits</h3>
+                                        <p class="small text-muted mb-0">A clear view of what is plausible with current methods and what is not.</p>
+                                    </div>
                                 </div>
-
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-code-branch text-primary mr-2"></i>Prototypes & Proof of Concepts</h4>
-                                    <p class="text-muted">Have a concrete idea? I build a working prototype so you can quickly evaluate whether and how an AI solution works in your specific context.</p>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Risks & data situation</h3>
+                                        <p class="small text-muted mb-0">An early look at data quality, technical uncertainty, and organizational hurdles.</p>
+                                    </div>
                                 </div>
-
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-users-cog text-primary mr-2"></i>Workshops & Training</h4>
-                                    <p class="text-muted">Hands-on workshops for teams that want to use AI tools in their daily work &ndash; from LLMs and agents to computer vision. Interactive, not lecture-style.</p>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Effort & next step</h3>
+                                        <p class="small text-muted mb-0">A rough assessment of whether a review, workshop, or prototype is worthwhile.</p>
+                                    </div>
                                 </div>
-
-                                <div class="service-item mb-4">
-                                    <h4 class="h5 font-weight-bold"><i
-                                            class="fas fa-tasks text-primary mr-2"></i>Technical Project Support</h4>
-                                    <p class="text-muted">For ongoing or planned AI projects, I serve as a technical sparring partner &ndash; whether it's about architecture, model selection, or bridging the gap between engineering and business teams.</p>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="trust-box h-100">
+                                        <h3 class="h6 font-weight-bold">Stop/go recommendation</h3>
+                                        <p class="small text-muted mb-0">An honest recommendation, even if the best answer is: do not invest yet.</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
-                    </div>
 
-                    <!-- Sidebar / Contact -->
-                    <div class="col-md-4">
-                        <div class="card border-0 shadow-sm bg-white p-4 sticky-top" style="top: 100px;">
-                            <h3 class="h5 font-weight-bold mb-3">Get in touch</h3>
-                            <p class="small text-muted mb-4">Drop me a message &ndash; happy to have a quick chat to see if and how I can help.</p>
-                            <a href="mailto:{{ site.data.profile.email }}"
-                                class="btn btn-primary btn-block mb-3 py-2 font-weight-bold">Send inquiry</a>
-                            <p class="small text-center text-muted"><i class="fas fa-globe-europe mr-1"></i> Mannheim,
-                                Offenburg & Remote</p>
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">How I work</h2>
+                            <ul class="principles-list text-muted">
+                                <li>No hype and no guaranteed ROI claims.</li>
+                                <li>No AI when a simpler solution fits better.</li>
+                                <li>Prototype before large investment.</li>
+                                <li>Vendor-neutral, without unnecessary lock-in.</li>
+                                <li>Transparent assumptions, limitations, and open questions.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-5">
+                            <h2 class="h3 mb-4 section-title">Related consulting topics</h2>
+                            <p class="text-muted">For more specific questions, I keep two focused pages:</p>
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <a class="topic-link d-block h-100" href="{{ '/ki-beratung-mittelstand/' | relative_url }}">
+                                        <strong>KI consulting for SMEs</strong>
+                                        <span>Realistic AI guidance for companies in the DACH region.</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <a class="topic-link d-block h-100" href="{{ '/ai-feasibility-assessment/' | relative_url }}">
+                                        <strong>AI Feasibility Assessment</strong>
+                                        <span>A structured stop/go check for AI ideas and prototypes.</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+
+                    <aside class="col-md-4">
+                        <div class="card border-0 shadow-sm bg-white p-4 sticky-top consulting-contact" style="top: 100px;">
+                            <h2 class="h5 font-weight-bold mb-3">Feasibility call</h2>
+                            <p class="small text-muted mb-4">Send me a short note about the question or idea you want to test. We will then clarify whether and how I can help.</p>
+                            <a href="mailto:{{ site.data.profile.email }}?subject=AI%20Feasibility%20Call"
+                                class="btn btn-primary btn-block mb-3 py-2 font-weight-bold">Request feasibility call</a>
+                            <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-primary btn-block mb-4 py-2">View research profile</a>
+                            <div class="small text-muted">
+                                <p class="mb-2"><i class="fas fa-user-graduate text-primary mr-2"></i>Scientific expertise in computer vision & interpretable AI</p>
+                                <p class="mb-0"><i class="fas fa-building text-primary mr-2"></i>Practical AI application experience at well-known companies, including Bosch, Porsche, and Ramblr</p>
+                            </div>
+                            <hr>
+                            <p class="small text-muted mb-0"><i class="fas fa-location-dot text-primary mr-2"></i>Remote across the DACH region, on-site mainly in the Mannheim-Freiburg region, including Heidelberg, Karlsruhe, and Offenburg.</p>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
 
@@ -159,24 +287,137 @@ navbar_title: Consulting
 </div>
 
 <style>
-    .section-title {
-        border-left: 4px solid var(--primary);
-        padding-left: 15px;
+    .consulting-page {
+        --consulting-accent: var(--primary);
+        --consulting-accent-dark: var(--primary-dark);
+        --consulting-accent-soft: var(--primary-soft);
+        --consulting-border: var(--border-soft);
+        --consulting-muted: var(--text-muted-soft);
     }
 
-    .service-item {
-        border-bottom: 1px solid #eee;
+    .consulting-page .text-primary {
+        color: var(--consulting-accent) !important;
+    }
+
+    .consulting-page .consulting-hero .lead {
+        max-width: 760px;
+    }
+
+    .consulting-page .consulting-hero {
+        border-bottom: 1px solid var(--consulting-border);
+        padding-bottom: 2rem;
+    }
+
+    .consulting-page .eyebrow {
+        color: var(--consulting-accent);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    .consulting-page .section-title {
+        border-left: 3px solid var(--consulting-accent);
+        padding-left: 14px;
+    }
+
+    .consulting-page .service-item {
+        border-bottom: 1px solid var(--consulting-border);
         padding-bottom: 20px;
     }
 
-    .service-item:last-child {
+    .consulting-page .service-item:last-child {
         border-bottom: none;
     }
 
-    .btn-group .btn.active {
-        background-color: var(--primary);
-        border-color: var(--primary);
+    .consulting-page .trust-box {
+        background: #fbfcfc;
+        border: 1px solid var(--consulting-border);
+        border-radius: 8px;
+        padding: 1rem;
+    }
+
+    .consulting-page .topic-link {
+        border: 1px solid var(--consulting-border);
+        border-radius: 8px;
+        color: #1f2933;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .consulting-page .topic-link:hover,
+    .consulting-page .topic-link:focus {
+        border-color: var(--consulting-accent);
+        color: #1f2933;
+        text-decoration: none;
+    }
+
+    .consulting-page .topic-link span {
+        color: var(--consulting-muted);
+        display: block;
+        font-size: 0.9rem;
+        margin-top: 0.35rem;
+    }
+
+    .consulting-page .principles-list {
+        padding-left: 1.2rem;
+    }
+
+    .consulting-page .principles-list li {
+        margin-bottom: 0.55rem;
+    }
+
+    .consulting-page .consulting-contact {
+        transition: none;
+        border: 1px solid var(--consulting-border) !important;
+        box-shadow: 0 0.35rem 1.4rem rgba(36, 73, 77, 0.06) !important;
+    }
+
+    .consulting-page .badge {
+        background: #ffffff !important;
+        border-color: var(--consulting-border) !important;
+        color: var(--consulting-muted);
+        font-weight: 500;
+    }
+
+    .consulting-page .btn-primary {
+        background-color: var(--consulting-accent);
+        border-color: var(--consulting-accent);
+    }
+
+    .consulting-page .btn-primary:hover,
+    .consulting-page .btn-primary:focus {
+        background-color: var(--consulting-accent-dark);
+        border-color: var(--consulting-accent-dark);
+    }
+
+    .consulting-page .btn-outline-primary {
+        color: var(--consulting-accent);
+        border-color: var(--consulting-accent);
+    }
+
+    .consulting-page .btn-outline-primary:hover,
+    .consulting-page .btn-outline-primary:focus {
+        background-color: var(--consulting-accent);
+        border-color: var(--consulting-accent);
+        color: #ffffff;
+    }
+
+    .consulting-page .btn-group .btn.active {
+        background-color: var(--consulting-accent);
+        border-color: var(--consulting-accent);
         color: #fff;
+    }
+
+    @media (max-width: 575.98px) {
+        .consulting-page .display-4 {
+            font-size: 2.1rem;
+        }
+
+        .consulting-page .btn-lg {
+            display: block;
+            width: 100%;
+        }
     }
 </style>
 
