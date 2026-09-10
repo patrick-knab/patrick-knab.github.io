@@ -20,5 +20,6 @@ authors:
   - Udo Schlegel†
   - Wolfgang Stammer†
 links:
+  Demo: https://patrick-knab.github.io/whats-in-the-bottle/
   Paper: https://openreview.net/forum?id=IF5vnqxBEW
 ---
