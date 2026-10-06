@@ -1,5 +1,6 @@
 ---
 title:          "Beyond Pixels: Enhancing LIME with Hierarchical Features and Segmentation Foundation Models"
+paper_id:       dseg-lime
 date:           2025-05-22 00:01:00 +0800
 selected:       true
 pub:            "International Conference on Learning Representations (ICLR) @ FM-Wild Workshop"

@@ -1,5 +1,6 @@
 ---
 title:          "BARISTA: A Multi-Task Egocentric Benchmark for Compositional Visual Understanding"
+paper_id:       barista
 date:           2026-06-17 00:05:00 +0800
 selected:       true
 pub:            "ICML 2026 Workshop on Combining Theory and Benchmarks: Towards a Virtuous Cycle to Understand and Guarantee Foundation Model Performance (CTB)"

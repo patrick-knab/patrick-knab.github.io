@@ -1,5 +1,6 @@
 ---
 title:          "What's in the Bottle? A Survey and Roadmap of Concept Bottleneck Models"
+paper_id:       cbm-survey
 date:           2026-05-29 00:01:00 +0800
 selected:       true
 pub:            "Transactions on Machine Learning Research (TMLR)"

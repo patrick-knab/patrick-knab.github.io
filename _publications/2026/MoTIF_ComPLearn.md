@@ -1,5 +1,6 @@
 ---
 title:          "Concepts in Motion: Temporal Bottlenecks for Interpretable Video Classification"
+paper_id:       motif
 date:           2026-06-17 00:01:00 +0800
 selected:       true
 pub:            "2nd Workshop on Compositional Learning (ComPLearn) @ International Conference on Machine Learning (ICML) (Spotlight, Best Paper Award)"

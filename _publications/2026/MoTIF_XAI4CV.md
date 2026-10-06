@@ -1,5 +1,6 @@
 ---
 title:          "Concepts in Motion: Temporal Bottlenecks for Interpretable Video Classification"
+paper_id:       motif
 date:           2026-04-13 00:03:00 +0800
 selected:       true
 pub:            "Conference on Computer Vision and Pattern Recognition (CVPR) @ XAI4CV Workshop (Spotlight)"

@@ -1,5 +1,6 @@
 ---
 title:          "What's in the Bottle? A Survey and Roadmap of Concept Bottleneck Models"
+paper_id:       cbm-survey
 date:           2026-02-27 00:01:00 +0800
 selected:       true
 pub:            "Preprint"

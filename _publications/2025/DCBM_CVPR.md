@@ -1,5 +1,6 @@
 ---
 title:          "DCBM: Data-Efficient Visual Concept Bottleneck Models"
+paper_id:       dcbm
 date:           2025-06-10 00:01:00 +0800
 selected:       true
 pub:            "Conference on Computer Vision and Pattern Recognition (CVPR) @ XAI4CV Workshop"

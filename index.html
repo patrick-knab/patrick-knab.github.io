@@ -21,10 +21,11 @@ navbar_title: Home
 {% endif %}
 
 {% if site.data.display.homepage.show_selected_publications %}
-    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {% assign publications = site.publications | sort: "date" | reverse %}
+    {% assign papers = publications | group_by_exp: "item", "item.paper_id | default: item.title" %}
     {% 
         include widgets/publication_card.html 
-        publications=pubs
+        papers=papers
         title='<i class="fas fa-star"></i> Selected Publications'
     %}
 {% endif %}

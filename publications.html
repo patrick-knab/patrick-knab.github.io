@@ -7,25 +7,43 @@ body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{%- comment -%}
+  A paper can have several records: for example, an early workshop version and
+  a later main-track version.  Sorting first means each group's first record is
+  its newest appearance, which is also the year under which we show the paper.
+  Set `paper_id` in a publication's front matter when titles differ between
+  versions; otherwise the title is used as the grouping key.
+{%- endcomment -%}
+{% assign publications = site.publications | sort: "date" | reverse %}
+{% assign papers = publications | group_by_exp: "item", "item.paper_id | default: item.title" %}
 
 <div class="row">
     <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
-        </div>
+        {% assign current_year = '' %}
+        {% for paper in papers %}
+        {% assign item = paper.items | first %}
+        {% assign item_year = item.date | date: '%Y' %}
+        {% if item_year != current_year %}
+            {% unless forloop.first %}</div>{% endunless %}
+            <h2 class="pt-4" id="year-{{ item_year }}">{{ item_year }}</h2>
+            <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
+            {% assign current_year = item_year %}
+        {% endif %}
+            {% include widgets/publication_item.html item=item history=paper.items %}
         {% endfor %}
+        {% unless papers == empty %}</div>{% endunless %}
     </div>
 
     <div class="col-2 d-none d-lg-block">
         <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
+            {% assign current_year = '' %}
+            {% for paper in papers %}
+            {% assign item = paper.items | first %}
+            {% assign item_year = item.date | date: '%Y' %}
+            {% if item_year != current_year %}
+            <a class="nav-link d-block" href="#year-{{ item_year }}">{{ item_year }}</a>
+            {% assign current_year = item_year %}
+            {% endif %}
             {% endfor %}
         </div>
     </div>

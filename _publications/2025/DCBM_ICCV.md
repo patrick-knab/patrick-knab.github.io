@@ -1,5 +1,6 @@
 ---
 title:          "DCBM: Data-Efficient Visual Concept Bottleneck Models"
+paper_id:       dcbm
 date:           2025-08-28 00:01:00 +0800
 selected:       true
 pub:            " International Conference on Computer Vision (ICCV) @ eXCV Workshop"

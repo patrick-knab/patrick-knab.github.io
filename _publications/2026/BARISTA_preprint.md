@@ -1,5 +1,6 @@
 ---
 title:          "BARISTA: A Multi-Task Egocentric Benchmark for Compositional Visual Understanding"
+paper_id:       barista
 date:           2026-05-12 00:01:00 +0800
 selected:       true
 pub:            "Preprint"
