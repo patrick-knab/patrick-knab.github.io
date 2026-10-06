@@ -5,7 +5,9 @@
     </h6>
     {% assign shown = 0 %}
     {% for paper in include.papers %}
-        {% assign item = paper.items | first %}
+        {% assign newest_item = paper.items | first %}
+        {% assign item = paper.items | where: "main_track", true | first %}
+        {% unless item %}{% assign item = newest_item %}{% endunless %}
         {% if item.selected %}
             {% include widgets/publication_item.html item=item history=paper.items first=false last=false %}
             {% assign shown = shown | plus: 1 %}

@@ -1,6 +1,7 @@
 ---
 title:          "Concepts in Motion: Temporal Bottlenecks for Interpretable Video Classification"
 paper_id:       motif
+main_track:     true
 date:           2026-09-25 10:00:00 +0200
 selected:       true
 pub:            "Conference on Neural Information Processing Systems (NeurIPS) (Main Track Poster)"

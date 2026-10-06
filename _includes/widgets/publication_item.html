@@ -1,7 +1,7 @@
 {% assign item = include.item %}
 {% assign has_previous_acceptance = false %}
-{% for occurrence in include.history offset:1 %}
-    {% unless occurrence.pub == 'Preprint' %}
+{% for occurrence in include.history %}
+    {% unless occurrence.url == item.url or occurrence.pub == 'Preprint' %}
         {% assign has_previous_acceptance = true %}
     {% endunless %}
 {% endfor %}
@@ -19,7 +19,7 @@
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
             {% if has_previous_acceptance %}
-            <p class="mt-0 mb-0 small text-muted publication-history"><span class="font-weight-semibold">Previously accepted:</span>{% assign first_acceptance = true %}{% for occurrence in include.history offset:1 %}{% unless occurrence.pub == 'Preprint' %}{% unless first_acceptance %} ·{% endunless %} <i>{{ occurrence.pub }}</i>{% assign first_acceptance = false %}{% endunless %}{% endfor %}</p>
+            <p class="mt-0 mb-0 small text-muted publication-history"><span class="font-weight-semibold">Previously accepted:</span>{% assign first_acceptance = true %}{% for occurrence in include.history %}{% unless occurrence.url == item.url or occurrence.pub == 'Preprint' %}{% unless first_acceptance %} ·{% endunless %} <i>{{ occurrence.pub }}</i>{% assign first_acceptance = false %}{% endunless %}{% endfor %}</p>
             {% endif %}
             <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
             
@@ -50,7 +50,7 @@
         <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
         <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
         {% if has_previous_acceptance %}
-        <p class="mt-0 mb-0 small text-muted publication-history"><span class="font-weight-semibold">Previously accepted:</span>{% assign first_acceptance = true %}{% for occurrence in include.history offset:1 %}{% unless occurrence.pub == 'Preprint' %}{% unless first_acceptance %} ·{% endunless %} <i>{{ occurrence.pub }}</i>{% assign first_acceptance = false %}{% endunless %}{% endfor %}</p>
+        <p class="mt-0 mb-0 small text-muted publication-history"><span class="font-weight-semibold">Previously accepted:</span>{% assign first_acceptance = true %}{% for occurrence in include.history %}{% unless occurrence.url == item.url or occurrence.pub == 'Preprint' %}{% unless first_acceptance %} ·{% endunless %} <i>{{ occurrence.pub }}</i>{% assign first_acceptance = false %}{% endunless %}{% endfor %}</p>
         {% endif %}
         {% if item.abstract %}
         <details class="publication-mobile-abstract">
