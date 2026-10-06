@@ -19,5 +19,5 @@ authors:
 links:
   Paper: https://arxiv.org/abs/2509.20899
   Code: https://patrick-knab.github.io/MoTIF/
-  Demo: https://patrick-knab.github.io/DSEG-LIME/
+  Demo: https://patrick-knab.github.io/MoTIF/
 ---
